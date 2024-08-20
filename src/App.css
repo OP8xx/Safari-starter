@@ -27,7 +27,7 @@ header {
 
 header h1 {
     font-size: 5rem;
-    background: -webkit-linear-gradient(#8c52ff, #004aad);
+    background: -webkit-linear-gradient(#8c52ff, #851479);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
