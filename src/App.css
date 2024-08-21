@@ -70,7 +70,8 @@ header h1 {
 }
 
 .food-item {
-    font-size: 1.0rem;
+    font-size: 0.80rem;
+    width: 80%;
     margin-left: 3vh;
 }
 .food-schedule {
