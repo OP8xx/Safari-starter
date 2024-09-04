@@ -14,7 +14,7 @@ import next from './assets/next.png';
 
 const Link = (props) => {
   return (
-    <a className='link' href={props.link} target="_blank" rel="noreferrer">
+    <a className='link' href={props.link} rel="noreferrer">
       <img src={props.img} alt="" srcset="" width={props.width} style={props.style}/>
     </a>
   )
