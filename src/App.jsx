@@ -10,6 +10,7 @@ import sanoma from './assets/sanoma.png';
 import otava from './assets/otava.png';
 import office from './assets/office.png';
 import googledrive from './assets/googledrive.png';
+import mafy from './assets/mafy.png';
 
 import next from './assets/next.png';
 
@@ -149,6 +150,7 @@ function App() {
           <Link link="https://edutampere.inschool.fi/!02252016/" img={wilma} width={75} style={{rotate: '-90deg'}}/>
           <Link link="https://moodle.tampere.fi/my/" img={moodle} width={60}/>
           <Link link="https://kampus.sanomapro.fi" img={sanoma} width={60}/>
+          <Link link="https://app.mafynetti.fi" img={mafy} width={75}/>
           <Link link="https://opiskelija.otava.fi" img={otava} width={75}/>
           <Link link="https://www.office.com/?auth=2" img={office} width={65}/>
           <Link link="https://drive.google.com/drive/u/3/home" img={googledrive} width={85}/>
