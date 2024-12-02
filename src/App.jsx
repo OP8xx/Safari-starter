@@ -37,10 +37,10 @@ function App() {
 
   function getLunchtime() {
     if (day == 1 || day == 3) {
-      setLunchtime('12:30')
+      setLunchtime('11:00')
     }
     else if (day == 2 || day == 4) {
-      setLunchtime('11:00')
+      setLunchtime('12:30')
     }
     else if (day == 5) {
       setLunchtime('11:00')
