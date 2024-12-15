@@ -1,8 +1,9 @@
 import './App.css';
 import bg from './assets/BG.png';
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
+import dayjs from 'dayjs';
 
 import wilma from './assets/wilma.png';
 import moodle from './assets/moodle.png';
@@ -13,6 +14,7 @@ import googledrive from './assets/googledrive.png';
 import mafy from './assets/mafy.png';
 
 import next from './assets/next.png';
+import { setDay } from 'date-fns';
 
 const Link = (props) => {
   return (
@@ -30,9 +32,27 @@ function App() {
   const [emoji, setEmoji] = useState('')
   const [clicked, setClicked] = useState('foodMenuHidden');
   const [lunchtime, setLunchtime] = useState('');
+  const [daysLeft, setDaysLeft] = useState('');
 
   const today = new Date();
   const day = today.getDay()
+
+  const targetDate = dayjs('2025-03-22');
+  const [td, setTd] = useState(null);
+
+  useEffect(() => {
+    setTd(dayjs())
+  }, [])
+
+  function calculateDaysLeft() {
+    const daysLeft = targetDate.diff(td, 'day');
+    setDaysLeft(daysLeft);
+  }
+
+  useEffect(() => {
+    calculateDaysLeft()
+  }, [td])
+
 
 
   function getLunchtime() {
@@ -108,7 +128,7 @@ function App() {
         <header>
           <h1> <Typewriter
                   options={{
-                  strings: ['Tervetuloa.'],
+                  strings: ['TJ: ' + daysLeft],
                   autoStart: true,
                   loop: true,
                   pauseFor: 100000,
