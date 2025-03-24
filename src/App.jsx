@@ -37,7 +37,7 @@ function App() {
   const today = new Date();
   const day = today.getDay()
 
-  const targetDate = dayjs('2025-03-22');
+  const targetDate = dayjs('2025-07-07');
   const [td, setTd] = useState(null);
 
   useEffect(() => {
@@ -128,7 +128,7 @@ function App() {
         <header>
           <h1> <Typewriter
                   options={{
-                  strings: ['TJ: ' + daysLeft + ' päivää'],
+                  strings: ['To 2/25: ' + daysLeft + ' päivää'],
                   autoStart: true,
                   loop: true,
                   pauseFor: 100000,
