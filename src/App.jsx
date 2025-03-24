@@ -128,7 +128,7 @@ function App() {
         <header>
           <h1> <Typewriter
                   options={{
-                  strings: ['To 2/25: ' + daysLeft + ' päivää'],
+                  strings: ['2 / 25: ' + daysLeft + ' päivää'],
                   autoStart: true,
                   loop: true,
                   pauseFor: 100000,
